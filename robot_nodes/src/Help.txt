@@ -1,0 +1,25 @@
+Main Nodes::
+	1. M_Node_Robot_Vrep.py
+	2. M_Node_ObjectDetection_1.py
+		or
+	   M_Node_ObjectDetection_2.py
+	3. M_Node_VisualServo_wJointAvoidance.py
+
+class-method::
+	C_ObjectDetection.py
+	K_Kinematics.py
+	VS_VisualServoing.py
+	K_Joint_avoidance.py
+
+Run below commands in different terminal
+
+$ roscore
+
+$ run coppeliasim.sh
+
+Run following in 3 different terminal tabs.
+
+$ rosrun armtorso_nodes M_Node_Robot_Vrep.py
+$ rosrun armtorso_nodes M_Node_ObjectDetection_1.py       
+	NOTE : if above doesn't work use M_Node_ObjectDetection_2.py
+$ rosrun armtorso_nodes M_Node_VisualServo_wJointAvoidance.py

@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<robot
+  name="rev4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0329607884968544 0.000122106039684568 -0.145826303936265"
+        rpy="0 0 0" />
+      <mass
+        value="1.27038003044167" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ll1">
+    <inertial>
+      <origin
+        xyz="-0.00034357189182932 -0.00466930923919515 0.0412611590398588"
+        rpy="0 0 0" />
+      <mass
+        value="0.315360961838809" />
+      <inertia
+        ixx="0.000342438731972288"
+        ixy="4.81994500628962E-07"
+        ixz="-1.0264060282593E-06"
+        iyy="0.000325395094600348"
+        iyz="-6.04285307890119E-05"
+        izz="1.7225614556389E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj1"
+    type="continuous">
+    <origin
+      xyz="0 0.183193750000119 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ll1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="ll2">
+    <inertial>
+      <origin
+        xyz="-2.11287683457573E-06 0.0291015209131721 -0.00624168975167459"
+        rpy="0 0 0" />
+      <mass
+        value="0.255190986477211" />
+      <inertia
+        ixx="0.000253525719869403"
+        ixy="-3.00155717932609E-07"
+        ixz="-5.33391840457306E-08"
+        iyy="8.23055872740016E-06"
+        iyz="-4.3564803936616E-05"
+        izz="0.000245319346241672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="ll1" />
+    <child
+      link="ll2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="ll3">
+    <inertial>
+      <origin
+        xyz="-0.000339752850006007 0.00429275324294051 0.0683223623888358"
+        rpy="0 0 0" />
+      <mass
+        value="0.206515698122877" />
+      <inertia
+        ixx="0.00069096316753664"
+        ixy="-2.62200541596234E-07"
+        ixz="-1.17842076528629E-06"
+        iyy="0.000683303977603341"
+        iyz="5.89878221188908E-05"
+        izz="7.78773574406472E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj3"
+    type="continuous">
+    <origin
+      xyz="0 0.240400002275914 -0.00024999999999997"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="ll2" />
+    <child
+      link="ll3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="ll4">
+    <inertial>
+      <origin
+        xyz="0.00139633228108432 -0.0424435942679403 0.00540344070433235"
+        rpy="0 0 0" />
+      <mass
+        value="0.184137871391256" />
+      <inertia
+        ixx="0.000242678931736446"
+        ixy="1.05179627702468E-06"
+        ixz="1.17610516748487E-06"
+        iyy="9.10252727982671E-06"
+        iyz="-4.07412226323047E-05"
+        izz="0.000235416377622013" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="ll3" />
+    <child
+      link="ll4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="ll5">
+    <inertial>
+      <origin
+        xyz="0.00151441911350195 -7.25240896322088E-05 -0.069297557080465"
+        rpy="0 0 0" />
+      <mass
+        value="0.230283275172606" />
+      <inertia
+        ixx="0.000635133711815549"
+        ixy="1.22847497871438E-07"
+        ixz="-5.92923903340212E-07"
+        iyy="0.000658075144620221"
+        iyz="-9.33169026074131E-07"
+        izz="2.30247448175587E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj5"
+    type="continuous">
+    <origin
+      xyz="0 -0.25576 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="ll4" />
+    <child
+      link="ll5" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="ll6">
+    <inertial>
+      <origin
+        xyz="0.0999973593534134 -1.3436474155526E-13 -1.68782354532659E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0395372178052721" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/ll6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lj6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="ll5" />
+    <child
+      link="ll6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rl1">
+    <inertial>
+      <origin
+        xyz="0.000278219255670176 0.00463932835486651 -0.0412947578376532"
+        rpy="0 0 0" />
+      <mass
+        value="0.315556520537943" />
+      <inertia
+        ixx="0.000342361892391865"
+        ixy="4.53790223768121E-07"
+        ixz="-9.76831952426691E-07"
+        iyy="0.000325227855742051"
+        iyz="-6.07475462857799E-05"
+        izz="1.73014807795384E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj1"
+    type="continuous">
+    <origin
+      xyz="0 -0.183193749999881 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rl1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl2">
+    <inertial>
+      <origin
+        xyz="-2.06801231006915E-05 0.0291080346972264 -0.00624670661171617"
+        rpy="0 0 0" />
+      <mass
+        value="0.25519098510684" />
+      <inertia
+        ixx="0.000253410044327156"
+        ixy="-1.75249809031122E-08"
+        ixz="-1.13245407142194E-08"
+        iyy="8.21460143029922E-06"
+        iyz="-4.35016812938318E-05"
+        izz="0.000245218313744007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 1.5707963267949 -3.14" />
+    <parent
+      link="rl1" />
+    <child
+      link="rl2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rl3">
+    <inertial>
+      <origin
+        xyz="0.000344957622254196 0.00427176802751622 -0.0682962841896071"
+        rpy="0 0 0" />
+      <mass
+        value="0.206515698049736" />
+      <inertia
+        ixx="0.000691736269105036"
+        ixy="2.520385836458E-07"
+        ixz="-1.22768729962472E-06"
+        iyy="0.000684038609852435"
+        iyz="-5.93564809476736E-05"
+        izz="7.82416722622183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj3"
+    type="continuous">
+    <origin
+      xyz="0 0.240399723378086 -0.000250000000000402"
+      rpy="-1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="rl2" />
+    <child
+      link="rl3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl4">
+    <inertial>
+      <origin
+        xyz="-0.00133055570602497 -0.0424431233002572 -0.00540127948713859"
+        rpy="0 0 0" />
+      <mass
+        value="0.184137868298514" />
+      <inertia
+        ixx="0.000242690504114107"
+        ixy="-1.52184878661577E-06"
+        ixz="1.27267482690803E-06"
+        iyy="9.13991296030902E-06"
+        iyz="4.0758407610107E-05"
+        izz="0.000235456800187344" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 1.5707963267949 3.14" />
+    <parent
+      link="rl3" />
+    <child
+      link="rl4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl5">
+    <inertial>
+      <origin
+        xyz="-0.00151175465822562 -2.68008824455546E-05 0.0692975570774478"
+        rpy="0 0 0" />
+      <mass
+        value="0.230283276049318" />
+      <inertia
+        ixx="0.000635134338783886"
+        ixy="-1.39936994825698E-07"
+        ixz="-6.3942267953407E-07"
+        iyy="0.00065807741661805"
+        iyz="1.36986694295629E-07"
+        izz="2.30276476699162E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj5"
+    type="continuous">
+    <origin
+      xyz="0 -0.255760000000001 0"
+      rpy="-1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="rl4" />
+    <child
+      link="rl5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rl6">
+    <inertial>
+      <origin
+        xyz="0.0999973593534124 1.35336186701807E-13 1.68782354532104E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0395372178052722" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/armtorso_meshes/rl6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rj6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="rl5" />
+    <child
+      link="rl6" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

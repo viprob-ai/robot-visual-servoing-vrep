@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/vipul/Workspaces/ws/armtorso_vs_ws/devel/include/**",
+        "/home/vipul/Workspaces/ros_ws/armtorso_vs_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/vipul/Workspaces/ros_ws/reachy_vs_ws/src/reachy_description/include/**",
+        "/home/vipul/Workspaces/ros_ws/reachy_vs_ws/src/reachy_nodes/include/**",
+        "/home/vipul/Workspaces/ros_ws/robot_ws/src/robot_description/include/**",
+        "/home/vipul/Workspaces/ros_ws/robot_ws/src/robot_nodes/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
